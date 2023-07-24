@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div {background: lightgray; display: inline;}
+	/* display: inline; 인라인 방식으로 변경됨, 글자크기만큼만(형광펜처럼) 색칠됨*/
+	span{background: olive; display: block; width: 300px;}
+	/* display: block; 블럭으로 설정됨.*/
+	.visible:hover ~.none{display: block;}
+	.none {display: none;}
+	/*기본적으로 인라인 방식으로 width를 줄 수가 없다. width를 주려면 display를 block으로 바꿔야
+	사이즈를 바꿀 수 있다.*/
+	label {background: skyblue; display: inline-block; width: 300px;} 
+	/*display: inline-block; 동작하는건 인라인으로 동작하고 사이즈를 주고 싶을때 사용*/
+</style>
+</head>
+<body>
+	<label>안녕하세요</label>
+	<div>div-01</div>
+	<div>div-02</div>
+	<span>span-01</span>
+	<span>span-02</span>
+	<h1 class="visible">마우스를 올려 주세요</h1>
+	<h1 class="none">내용!</h1>
+	끝~~~
+</body>
+</html>

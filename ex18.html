@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	#wrap{
+			display: flex; width: 50%; height: 200px; margin: auto;
+			border: 4px solid black; text-align: center;}
+			/* margin: auto; 네모 박스 자체를 화면 가운데로*/
+			
+	#wrap div{ width: 33.33%}
+	/*width: 33.33% 넓이룰 줘서 글자 가운데정렬, display: flex;로 글자를
+	가로로(?)맞췄기 때문에 text-align: center;로 글자 가운데정렬이 안되서
+	넓이를 줘서 가운데 정렬함*/
+	
+	.cl01 {order: 1; background: red;}
+	.cl02 {order: 2; display:flex; background: green;}
+	/*cl02에 display:flex; 주면 자식들인 h01,02클래스들도 가로로 배치됨*/
+	.cl03 {order: 3; background: blue;}
+	
+	h1 {width: 50%;}
+	.h01{order: 2; background: pink; }
+	.h02{order: 1; display:flex;  background: gray;}
+	/*flex-flow:row;가로배치, flex-flow:column새로;*/
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="cl01"><h1>1</h1></div>
+		
+		<div class="cl02">
+			<h1 class="h01">
+				 <p>11</p>
+				 <p>11</p>
+			</h1>
+			<h1 class="h02">
+				 <p>22</p>
+				 <p>22</p>
+			</h1>
+			
+		</div>
+		
+		<div class="cl03"><h1>3</h1></div>
+	</div>
+</body>
+</html>

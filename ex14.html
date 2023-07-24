@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	.in-block{background: orange; height: 50px; display: inline-block;
+	line-height: 50px; width: 200px; text-align: center;
+	text-decoration: none;}
+	/* height: 50px; line-height: 50px; 둘이 같으면 위아래로 가운데정렬*/
+	div{background: skyblue; width: 300px; height: 300px;
+			line-height: 30px;
+			display: table-cell; vertical-align: middle;}
+	/*line-height: 300px; 글자들끼리의 간격 
+	display: table-cell; vertical-align: middle; 맞추면 가운데로 옴*/
+	input {height: 50px; border-radius: 10px 0 10px 0;}
+	label {background: gray; height: 50px; display: inline-block; 
+			line-height: 25px; vertical-align: middle; font-size: 20px;}
+	
+</style>
+</head>
+<body>
+	<a href="#" class="in-block">홈으로 이동</a>
+	<div>여러줄<br>가운데<br>정렬<br>되나요?</div>
+	<label>아이디 입력</label><input>
+</body>
+</html>
